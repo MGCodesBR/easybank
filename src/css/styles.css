@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*--========== BREAKPOINTS BASED ON BS5 ==========-- */
+/*--========== MAX-WIDTH BASED ON BS5 ==========-- */
+/*--========== COLORS ==========-- */
+/*--========== GOOGLE FONTS ==========-- */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500&display=swap");
+/*--========== FONT FAMILY ==========-- */
+/*--========== FONT WEIFHT ==========-- */
+/*--========== FONT SIZE – 1rem=10px ==========-- */
+/* ========== SPACES ========== */
+/* MEDIA QUERIES BASED ON BREAKPOINTS BS5 ========== */
+/* ========== RESET ========== */
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none; }
+
+html,
+body {
+  overflow-x: hidden; }
+
+ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* ========== BASE SETTING PROJECT  ========== */
+html {
+  font-size: 10px;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: white;
+  color: black;
+  margin: 0rem 0 0 0; }
+
+h1, h2, h4, h4 {
+  line-height: 1.5; }
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent; }
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0; }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1110px; } }
+
+.grid {
+  width: 100%;
+  display: grid;
+  gap: 1.6rem;
+  text-align: center;
+  padding: 1.6rem; }
+  @media (min-width: 768px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto; } }
+  @media (min-width: 992px) {
+    .grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }

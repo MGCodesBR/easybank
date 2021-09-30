@@ -1,0 +1,22 @@
+.grid {
+   width: 100%;
+   display: grid;
+   gap: 1.6rem;
+   text-align: center;
+   padding: 1.6rem;
+
+   @include mq(md) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+   
+   }
+
+   @include mq(lg) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+   }
+
+}

@@ -1,0 +1,26 @@
+.container {
+   width: 100%;
+   max-width: $max-xs;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   padding: 10px 0;
+
+   @include mq(sm) {
+      max-width: $max-sm;
+   }
+
+   @include mq(md) {
+      max-width: $max-md;
+   }
+
+   @include mq(lg) {
+      max-width: $max-lg;
+   }
+
+   @include mq(xl) {
+      max-width: $max-xl;
+   }
+
+}

@@ -1,0 +1,21 @@
+/* ========== BASE SETTING PROJECT  ========== */
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-body;
+    font-size: $font-base;
+    font-weight: $font-regular;
+    background-color: white;
+    color: black;
+    margin: $fixed-header-height 0 0 0;
+    // transition: 0.3s; // for animation dark mode
+}
+
+
+h1,h2,h4,h4 {
+    line-height: 1.5;
+}
