@@ -1,0 +1,36 @@
+.main-header {
+   width: 100%;
+   height: 6.4rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   padding: 0 2.4rem;
+   background-color: $color-white;
+   > .logo {
+      max-width: 141px;
+      max-height: 22px;
+   }
+   > .cta-button {
+      display: none;
+   }
+
+   @include mq(lg) {
+      height: 8rem;
+      max-width: $max-lg;
+      padding: 0;
+      > .cta-button {
+         display: flex;
+         max-width: 16.4rem;
+         max-height: 4.4rem;
+      }
+      > .menu-button {
+         display: none;
+      }
+   }
+
+   @include mq(xl) {
+      max-width: $max-xl;
+   }
+   
+}

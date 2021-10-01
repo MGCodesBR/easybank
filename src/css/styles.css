@@ -38,7 +38,7 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: white;
+  background-color: aliceblue;
   color: black;
   margin: 0rem 0 0 0; }
 
@@ -53,6 +53,8 @@ h1, h2, h4, h4 {
   margin: 0;
   padding: 0;
   background-color: transparent; }
+  .section.-header {
+    background-color: white; }
 
 .container {
   width: 100%;
@@ -92,3 +94,149 @@ h1, h2, h4, h4 {
       flex-direction: row;
       justify-content: center;
       align-items: center; } }
+
+.logo {
+  width: 100%;
+  height: auto;
+  text-indent: -9999px;
+  background-image: url("../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover; }
+
+.menu-button {
+  width: 2.4rem;
+  height: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer; }
+  .menu-button > .bar1, .menu-button .bar2, .menu-button .bar3 {
+    width: 100%;
+    height: 2px;
+    background-color: #2d314d;
+    transition: all .3s ease; }
+  .menu-button.-active > .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 4px);
+    transform: rotate(-45deg) translate(-6px, 4px); }
+  .menu-button.-active > .bar2 {
+    opacity: 0; }
+  .menu-button.-active > .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -4px);
+    transform: rotate(45deg) translate(-6px, -4px); }
+
+.cta-button {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.2rem;
+  opacity: 1;
+  transition: opacity .3s ease-in-out; }
+  .cta-button:hover {
+    opacity: 0.75;
+    transition: opacity .3s ease-in-out; }
+
+.main-header {
+  width: 100%;
+  height: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+  background-color: white; }
+  .main-header > .logo {
+    max-width: 141px;
+    max-height: 22px; }
+  .main-header > .cta-button {
+    display: none; }
+  @media (min-width: 992px) {
+    .main-header {
+      height: 8rem;
+      max-width: 960px;
+      padding: 0; }
+      .main-header > .cta-button {
+        display: flex;
+        max-width: 16.4rem;
+        max-height: 4.4rem; }
+      .main-header > .menu-button {
+        display: none; } }
+  @media (min-width: 1200px) {
+    .main-header {
+      max-width: 1110px; } }
+
+.main-nav {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 6.4rem;
+  left: 0;
+  background-image: linear-gradient(to bottom, #2d314d, transparent);
+  padding: 2.4rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s ease-in-out; }
+  .main-nav.-active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s ease-in-out; }
+  .main-nav > .items-list {
+    display: grid;
+    gap: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    padding: 3.4rem 0;
+    border-radius: 5px;
+    background-color: white; }
+    .main-nav > .items-list > .item > .link {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #9698a6; }
+  @media (min-width: 992px) {
+    .main-nav {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+      opacity: 1;
+      top: 0;
+      padding: 0;
+      background-image: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      .main-nav > .items-list {
+        height: 100%;
+        display: flex;
+        padding: 0; }
+        .main-nav > .items-list > .item {
+          width: 100%;
+          height: inherit;
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin: 0 0.8rem; }
+          .main-nav > .items-list > .item:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-image: linear-gradient(to right, #31d35c, #2bb7da);
+            opacity: 0;
+            transition: opacity .3s ease-in-out; }
+          .main-nav > .items-list > .item:hover > .link {
+            font-weight: 500; }
+          .main-nav > .items-list > .item:hover:after {
+            opacity: 1;
+            transition: opacity .3s ease-in-out; } }
