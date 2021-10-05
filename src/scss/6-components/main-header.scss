@@ -7,6 +7,8 @@
    margin: 0 auto;
    padding: 0 2.4rem;
    background-color: $color-white;
+   z-index: 1;
+
    > .logo {
       max-width: 141px;
       max-height: 22px;
