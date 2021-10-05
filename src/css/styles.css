@@ -57,6 +57,8 @@ h1, h2, h4, h4 {
     background-color: white; }
   .section.-hero {
     background-color: #fafafa; }
+  .section.-feature {
+    background-color: #f3f4f6; }
 
 .container {
   width: 100%;
@@ -343,3 +345,74 @@ h1, h2, h4, h4 {
         .main-hero > .hero-image:after {
           height: 120%;
           background-position: left 110px bottom; } }
+
+.main-feature {
+  width: 100vw;
+  height: auto;
+  padding: 7.2rem 2rem; }
+  .main-feature > .feature-intro {
+    margin-bottom: 2.4rem;
+    text-align: center; }
+    .main-feature > .feature-intro > .title {
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 2.4rem;
+      padding: 0 2.4rem; }
+    .main-feature > .feature-intro > .description {
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: 2; }
+  .main-feature > .grid {
+    gap: 3.6rem; }
+    .main-feature > .grid > .feature-item > .icon {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem; }
+    .main-feature > .grid > .feature-item > .title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem; }
+    .main-feature > .grid > .feature-item > .description {
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: 2; }
+  @media (min-width: 768px) {
+    .main-feature {
+      padding: 7.2rem 2.4rem; }
+      .main-feature > .feature-intro {
+        text-align: left;
+        margin-bottom: 4.8rem; }
+        .main-feature > .feature-intro > .title {
+          padding: 0; }
+      .main-feature > .grid {
+        gap: 2.4rem;
+        align-items: flex-start;
+        padding: 0; }
+        .main-feature > .grid > .feature-item {
+          text-align: left; }
+          .main-feature > .grid > .feature-item > .icon {
+            justify-content: flex-start; }
+          .main-feature > .grid > .feature-item > .description {
+            line-height: 1.6; } }
+  @media (min-width: 992px) {
+    .main-feature {
+      max-width: 960px;
+      padding: 7.2rem 0; }
+      .main-feature > .feature-intro > .title {
+        font-size: 3.6rem; }
+      .main-feature > .feature-intro > .description {
+        width: 70%;
+        font-size: 1.8rem;
+        line-height: 1.5; }
+      .main-feature > .grid {
+        gap: 3.6rem; }
+        .main-feature > .grid > .feature-item > .title {
+          font-size: 2.4rem; } }
+  @media (min-width: 1200px) {
+    .main-feature {
+      max-width: 1110px; }
+      .main-feature > .grid {
+        gap: 8rem; } }

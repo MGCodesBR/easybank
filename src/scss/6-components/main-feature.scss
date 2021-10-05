@@ -1,0 +1,103 @@
+.main-feature {
+   width: 100vw;
+   height: auto;
+   padding: 7.2rem 2rem;
+
+   > .feature-intro {
+      margin-bottom: 2.4rem;
+      text-align: center;
+      > .title {
+         font-size: $font-title-h2-sm;
+         font-weight: $font-medium;
+         line-height: 1.2;
+         margin-bottom: 2.4rem;
+         padding: 0 2.4rem;
+      }
+      > .description {
+         font-size: $font-text-md;
+         font-weight: $font-light;
+         line-height: 2;
+      }
+   }
+   > .grid {
+      gap: 3.6rem;
+      > .feature-item {
+         > .icon {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+         }
+         > .title {
+            font-size: $font-title-h3-sm;
+            font-weight: $font-medium;
+            margin-bottom: 2rem;
+         }
+         > .description {
+            font-size: $font-text-md;
+            font-weight: $font-light;
+            line-height: 2;
+         }
+      }
+   }
+
+   @include mq(md) {
+   padding: 7.2rem 2.4rem;
+
+      > .feature-intro {
+         text-align: left;
+         margin-bottom: 4.8rem;
+         > .title {
+            padding: 0;
+         }
+   
+      }
+      > .grid {
+         gap: 2.4rem;
+         align-items: flex-start;
+         padding: 0;
+         > .feature-item {
+            text-align: left;
+            > .icon {
+               justify-content: flex-start;
+            }
+            > .description {
+               line-height: 1.6;
+            }
+         }
+      }
+
+   }
+
+   @include mq(lg) {
+      max-width: $max-lg;
+      padding: 7.2rem 0;
+      > .feature-intro {
+         > .title {
+            font-size: $font-title-h2-lg;
+         }
+         > .description {
+            width: 70%;
+            font-size: $font-text-lg;
+            line-height: 1.5;
+         }
+      }
+      > .grid {
+         gap: 3.6rem;
+         > .feature-item {
+            > .title{
+               font-size: $font-title-h3-lg;
+            }
+         }
+      }
+   }
+
+   @include mq(xl) {
+      max-width: $max-xl;
+      > .grid {
+         gap: 8rem;
+      }
+   }
+
+}
