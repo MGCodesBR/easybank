@@ -9,4 +9,7 @@
    background-repeat: no-repeat;
    background-position: 0 0;
    background-size: cover;
+   &.-light {
+      background-image: url("../assets/logo-light.svg");
+   }
 }

@@ -6,7 +6,6 @@
    margin: 0;
    padding: 0;
    background-color: transparent;
-
    &.-header {
       background-color: $color-white;
    }
@@ -19,5 +18,7 @@
    &.-articles {
       background-color: $color-veryLightGray;
    }
-
+   &.-footer {
+      background-color: $color-darkBlue;
+   }
 }

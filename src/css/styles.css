@@ -61,6 +61,8 @@ h1, h2, h4, h4 {
     background-color: #f3f4f6; }
   .section.-articles {
     background-color: #fafafa; }
+  .section.-footer {
+    background-color: #2d314d; }
 
 .container {
   width: 100%;
@@ -109,6 +111,8 @@ h1, h2, h4, h4 {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover; }
+  .logo.-light {
+    background-image: url("../assets/logo-light.svg"); }
 
 .menu-button {
   width: 2.4rem;
@@ -505,3 +509,110 @@ h1, h2, h4, h4 {
   @media (min-width: 1200px) {
     .main-articles {
       max-width: 1110px; } }
+
+.main-footer {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 0; }
+  .main-footer > .grid {
+    padding: 0;
+    gap: 4rem; }
+    .main-footer > .grid > .social-media {
+      width: 18rem;
+      height: auto;
+      margin: 0 auto; }
+      .main-footer > .grid > .social-media > .logo {
+        display: block;
+        width: 141px;
+        margin: 0 auto 3rem; }
+      .main-footer > .grid > .social-media > .icons {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0; }
+    .main-footer > .grid > .site-map {
+      width: 100%; }
+      .main-footer > .grid > .site-map > .list:first-child {
+        margin-bottom: 2.4rem; }
+      .main-footer > .grid > .site-map > .list > .item:not(:last-child) {
+        margin-bottom: 2.4rem; }
+      .main-footer > .grid > .site-map > .list > .item > .link {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: white; }
+    .main-footer > .grid > .cta-content {
+      width: 100vw;
+      margin: 0;
+      padding: 0; }
+      .main-footer > .grid > .cta-content > .cta-button {
+        display: inline-flex;
+        max-width: 16.2rem;
+        height: 4.4rem;
+        margin-bottom: 3rem; }
+      .main-footer > .grid > .cta-content > .copyright {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #9698a6; }
+  @media (min-width: 768px) {
+    .main-footer {
+      padding: 4rem 2.4rem; }
+      .main-footer > .grid {
+        grid-template-columns: 16rem 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 6rem; }
+        .main-footer > .grid > .social-media {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start; }
+          .main-footer > .grid > .social-media > .logo {
+            display: block;
+            width: 141px;
+            margin: 0 auto 3rem 0; }
+        .main-footer > .grid > .site-map {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); }
+          .main-footer > .grid > .site-map > .list:first-child {
+            margin-bottom: 0; }
+          .main-footer > .grid > .site-map > .list > .item {
+            text-align: left; }
+        .main-footer > .grid > .cta-content {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-end; } }
+  @media (min-width: 992px) {
+    .main-footer {
+      max-width: 960px;
+      padding: 4.8rem 0; }
+      .main-footer > .grid > .social-media {
+        width: 50%;
+        height: 9.8rem; }
+        .main-footer > .grid > .social-media > .icons > .icon > .link > svg path {
+          fill: white;
+          transition: fill .3s ease-in-out; }
+        .main-footer > .grid > .social-media > .icons > .icon > .link:hover > svg path {
+          fill: #31d35c;
+          transition: fill .3s ease-in-out; }
+      .main-footer > .grid > .site-map > .list {
+        margin-left: 4rem; }
+        .main-footer > .grid > .site-map > .list > .item > .link {
+          color: white;
+          transition: color .3s ease-in-out; }
+          .main-footer > .grid > .site-map > .list > .item > .link:hover {
+            color: #31d35c;
+            transition: color .3s ease-in-out; } }
+  @media (min-width: 1200px) {
+    .main-footer {
+      max-width: 1110px; }
+      .main-footer > .grid > .social-media {
+        width: 50%;
+        max-width: 17rem; } }
