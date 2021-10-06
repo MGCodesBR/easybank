@@ -1,0 +1,21 @@
+.credits {
+   width: 100%;
+   font-size: $font-text-xs;
+   font-weight: $font-light;
+   color: $color-grayishBlue;
+   background-color: transparent;
+   padding: 4rem 0 0;
+   text-align: center;
+   > .link {
+      color: $color-white;
+      transition: color .3s ease-in-out;
+      &:hover {
+         color: $color-limeGreen;
+         transition: color .3s ease-in-out;
+      }
+   }
+
+   @include mq(lg) {
+      padding: 4.8rem 0 0;
+   }
+}

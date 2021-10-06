@@ -154,6 +154,24 @@ h1, h2, h4, h4 {
     opacity: 0.75;
     transition: opacity .3s ease-in-out; }
 
+.credits {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #9698a6;
+  background-color: transparent;
+  padding: 4rem 0 0;
+  text-align: center; }
+  .credits > .link {
+    color: white;
+    transition: color .3s ease-in-out; }
+    .credits > .link:hover {
+      color: #31d35c;
+      transition: color .3s ease-in-out; }
+  @media (min-width: 992px) {
+    .credits {
+      padding: 4.8rem 0 0; } }
+
 .main-header {
   width: 100%;
   height: 6.4rem;
@@ -517,7 +535,7 @@ h1, h2, h4, h4 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 0; }
+  padding: 4rem 0 2rem; }
   .main-footer > .grid {
     padding: 0;
     gap: 4rem; }
@@ -561,7 +579,7 @@ h1, h2, h4, h4 {
         color: #9698a6; }
   @media (min-width: 768px) {
     .main-footer {
-      padding: 4rem 2.4rem; }
+      padding: 4rem 2.4rem 2rem; }
       .main-footer > .grid {
         grid-template-columns: 16rem 1fr 1fr;
         grid-template-rows: 1fr;
@@ -592,7 +610,7 @@ h1, h2, h4, h4 {
   @media (min-width: 992px) {
     .main-footer {
       max-width: 960px;
-      padding: 4.8rem 0; }
+      padding: 4.8rem 0 2rem; }
       .main-footer > .grid > .social-media {
         width: 50%;
         height: 9.8rem; }
